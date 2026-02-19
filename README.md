@@ -6,8 +6,7 @@ AgentMesh is the local-first layer I built to fix that. It sits alongside your A
 
 Nothing leaves your machine. It runs entirely on Docker and Next.js.
 
-https://media.licdn.com/dms/image/v2/D4D22AQGkUfirGN75Uw/feedshare-shrink_2048_1536/B4DZx3Xw_nHEAk-/0/1771529245443?e=1773273600&v=beta&t=fUD_YCofmj6Br27oZipVeTT7BB03wuADn2ceHAr1k0o<img width="2048" height="709" alt="image" src="https://github.com/user-attachments/assets/5170ac28-cd7c-4fe3-b29c-6a37bcc07f1f" />
-
+https://media.licdn.com/dms/image/v2/D4D22AQGkUfirGN75Uw/feedshare-shrink_2048_1536/B4DZx3Xw_nHEAk-/0/1771529245443?e=1773273600&v=beta&t=fUD_YCofmj6Br27oZipVeTT7BB03wuADn2ceHAr1k0o
 
 ---
 
