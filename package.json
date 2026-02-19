@@ -1,0 +1,59 @@
+{
+  "name": "agentmesh",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome lint src/app src/lib src/worker src/components/ingestion src/components/sessions prisma",
+    "format": "biome format --write src prisma *.json *.ts",
+    "test": "bun test src/lib/ingestion/__tests__",
+    "typecheck": "tsc --noEmit",
+    "db:migrate": "bunx prisma migrate dev",
+    "db:seed": "bunx prisma db seed",
+    "db:reset": "bunx prisma migrate reset --force && bunx prisma db seed",
+    "ingest:backfill": "bun src/worker/backfill.ts",
+    "ingest:watch": "bun src/worker/watch.ts",
+    "ingest:status": "bun src/worker/status.ts",
+    "data:cleanup-seed": "bun src/worker/cleanup-seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "6.16.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.575.0",
+    "next": "16.1.6",
+    "radix-ui": "^1.4.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.2",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "bun-types": "^1.3.9",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "prisma": "6.16.0",
+    "shadcn": "^3.8.5",
+    "tailwindcss": "^4",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5"
+  },
+  "ignoreScripts": [
+    "sharp",
+    "unrs-resolver"
+  ],
+  "trustedDependencies": [
+    "@prisma/client",
+    "@prisma/engines",
+    "prisma",
+    "sharp",
+    "unrs-resolver"
+  ]
+}
